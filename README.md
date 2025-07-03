@@ -1,25 +1,32 @@
 # 프론트엔드 TDD 학습용 Repo
 
-## 사용하는 기술
-- React
-- TypeScript
-- Vite
-- Vitest
-- Pnpm
+## 스터디 진행 순서
 
-## 파일 위치
-### 테스트 파일
-`src/component/Counter.test.tsx`
-### 컴포넌트 파일
-`src/component/Counter.tsx`
+- 스터디에서는 counter, form, terms-agreement 컴포넌트를 실습합니다.
+- 각 폴더 내부에는 컴포넌트 파일과 테스트 파일 그리고 README.md 파일이 존재합니다.
+- README.md 파일에는 각 컴포넌트의 요구사항과 추가 요구사항이 작성되어 있습니다.
 
-## 테스트 방법
-- 이미 작성되어 있는 `Counter.test.tsx`를 통과할 수 있도록 코드를 작성해주세요.
-- 현재 존재하는 Counter 컴포넌트는 예시입니다.
+### 1. counter 컴포넌트 실습
+
+- 테스트 파일과 요구 사항을 확인한 후에 컴포넌트 파일을 수정해주세요.
+- 추가 요구사항을 기반으로 테스트를 작성해주세요.
+- 테스트를 통과하기 위해 컴포넌트 파일을 수정해주세요.
+
+### 2. form 컴포넌트 실습
+
+- 테스트 파일과 요구 사항을 확인한 후에 컴포넌트 파일을 수정해주세요.
+- 추가 요구사항을 기반으로 테스트를 작성해주세요.
+- 테스트를 통과하기 위해 컴포넌트 파일을 수정해주세요.
+
+### 3. terms-agreement 컴포넌트 실습
+
+- 기존에 코드를 작성했던 방식과 TDD 방식 중 본인이 편한 방식으로 풀어보세요.
 
 ## 실행 방법
+
 ```bash
- pnpm test
-// 혹은
- pnpm test src/components/Counter.test.tsx --run
+ npm install
+ npm test
+ // 혹은
+ npm test src/components/Counter.test.tsx -- --run
 ```
