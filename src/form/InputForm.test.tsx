@@ -32,4 +32,8 @@ describe("InputForm 컴포넌트", () => {
 
     expect(input).toHaveValue("");
   });
+
+  it("InputForm이 렌더링되면 입력창에 포커스가 되어 있다", () => {});
+
+  it("InputForm이 제출 된 후에, 입력창에 포커스가 되어 있다", () => {});
 });

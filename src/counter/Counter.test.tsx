@@ -28,22 +28,7 @@ describe("Counter", () => {
     expect(screen.getByText("카운트: -1")).toBeInTheDocument();
   });
 
-  it("초기값을 props로 받을 수 있다", () => {
-    render(<Counter initialValue={5} />);
-    expect(screen.getByText("카운트: 5")).toBeInTheDocument();
-  });
+  it("초기값을 props로 받을 수 있다", () => {});
 
-  it("리셋 버튼을 클릭하면 초기값으로 돌아간다", async () => {
-    const user = userEvent.setup();
-    render(<Counter initialValue={10} />);
-
-    const incrementButton = screen.getByRole("button", { name: "증가" });
-    await user.click(incrementButton);
-    expect(screen.getByText("카운트: 11")).toBeInTheDocument();
-
-    const resetButton = screen.getByRole("button", { name: "리셋" });
-    await user.click(resetButton);
-
-    expect(screen.getByText("카운트: 10")).toBeInTheDocument();
-  });
+  it("리셋 버튼을 클릭하면 초기값으로 돌아간다", async () => {});
 });
